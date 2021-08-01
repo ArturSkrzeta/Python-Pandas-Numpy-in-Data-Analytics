@@ -149,7 +149,7 @@
 											<code>arr = np.arange(10)</code><br>
 											<code>array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])</code><br>
 											if we assign a scalar value to a slice:<br>
-											<code>arr[5:8] = 100</code><br>
+											<code>arr[5:8] = 100</code> where 8 is exlcuded<br>
 											<code>array([0, 1, 2, 3, 4, 100, 100, 100, 8, 9])</code><br>
 											<code>arr[5:8][1] = 999</code><br>
 											<code>array([0, 1, 2, 3, 4, 100, 999, 100, 8, 9])</code><br>
@@ -175,11 +175,35 @@
 											<code>arr2d[1,:2]</code><br>
 											&nbsp&nbsp&nbsp&nbsp<code>array([4,5]])</code><br>
 											note that when slicing [:2] - 2 is exclusive, when [2:] - 2 is inclusive,<br>
+											<code>arr2d[:2,1]</code><br>
+											&nbsp&nbsp&nbsp&nbsp<code>array([2,5]])</code><br>
 											- taking entire axis with ":":<br>
 											<code>arr2d[:,:1]</code><br>
 											<code>array([[1],</code><br>
 											&nbsp&nbsp&nbsp&nbsp<code>[4],</code><br>
 											&nbsp&nbsp&nbsp&nbsp<code>[7]])</code>
+										</li>
+										<li>Slice vs index:
+											<table>
+												<thead>
+													<tr>
+														<td>Slicing</td>
+														<td>Indexing</td>
+													</tr>
+												</thead>
+												<tr>
+													<td>
+														<code>arr2d[:,:1]</code><br>
+														<code>array([[1],</code><br>
+														&nbsp&nbsp&nbsp&nbsp<code>[4],</code><br>
+														&nbsp&nbsp&nbsp&nbsp<code>[7]])</code>
+													</td>
+													<td>
+														<code>arr2d[:,0]</code><br>
+														<code>array([1,4,7])</code>
+													</td>
+												</tr>
+											</table>
 										</li>
 										<li>Assigning a scalar to a slice of an array:
 											<br>
