@@ -159,20 +159,34 @@
 										<li>Slicing 2D arrays:
 											<br>
 											<code>arr2d = np.array([1, 2, 3], [4, 5, 6], [7, 8, 9])</code><br>
-											<code>array([1, 2, 3],</code><br>
+											<code>array([[1, 2, 3],</code><br>
 											&nbsp&nbsp&nbsp&nbsp<code>[4, 5, 6],</code><br>
 											&nbsp&nbsp&nbsp&nbsp<code>[7, 8, 9]])</code><br>
 											- slicing arr2d along 0 axis:<br>
 											<code>arr2d[:2]</code><br>
-											<code>array([1, 2, 3],)</code><br>
+											<code>array([[1, 2, 3],</code><br>
 											&nbsp&nbsp&nbsp&nbsp<code>[4, 5, 6]])</code><br>
 											we can say take two first rows from the array by this notation <b>[:2]</b>,<br>
 											- slicing arr2d along 0 and 1 axis:<br>
 											<code>arr2d[:2, 1:]</code><br>
 											<code>array([[2, 3],</code><br>
 											&nbsp&nbsp&nbsp&nbsp<code>[5, 6]])</code><br>
-											-
-
+											- mixing indexing and slicing:<br>
+											<code>arr2d[1,:2]</code><br>
+											&nbsp&nbsp&nbsp&nbsp<code>array([4,5]])</code><br>
+											note that when slicing [:2] - 2 is exclusive, when [2:] - 2 is inclusive,<br>
+											- taking entire axis with ":":<br>
+											<code>arr2d[:,:1]</code><br>
+											<code>array([[1],</code><br>
+											&nbsp&nbsp&nbsp&nbsp<code>[4],</code><br>
+											&nbsp&nbsp&nbsp&nbsp<code>[7]])</code>
+										</li>
+										<li>Assigning a scalar to a slice of an array:
+											<br>
+											<code>arr2d[:2,1:] = 0</code><br>
+											<code>array([[1, 0, 0],</code><br>
+											&nbsp&nbsp&nbsp&nbsp<code>[4, 0, 0],</code><br>
+											&nbsp&nbsp&nbsp&nbsp<code>[7, 8, 9]])</code>
 										</li>
 									</ul>
 							</section>
