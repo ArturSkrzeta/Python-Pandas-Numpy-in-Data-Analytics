@@ -156,7 +156,22 @@
 											then we perform so-called broadcasting which means we assign a scalar value to entire range of a slice of an original array.
 											Very important thing to notice, slices are not the copies of an original array - they are like views which modifications change the source array.
 										</li>
-										<li>
+										<li>Slicing 2D arrays:
+											<br>
+											<code>arr2d = np.array([1, 2, 3], [4, 5, 6], [7, 8, 9])</code><br>
+											<code>array([1, 2, 3],</code><br>
+											&nbsp&nbsp&nbsp&nbsp<code>[4, 5, 6],</code><br>
+											&nbsp&nbsp&nbsp&nbsp<code>[7, 8, 9]])</code><br>
+											- slicing arr2d along 0 axis:<br>
+											<code>arr2d[:2]</code><br>
+											<code>array([1, 2, 3],)</code><br>
+											&nbsp&nbsp&nbsp&nbsp<code>[4, 5, 6]])</code><br>
+											we can say take two first rows from the array by this notation <b>[:2]</b>,<br>
+											- slicing arr2d along 0 and 1 axis:<br>
+											<code>arr2d[:2, 1:]</code><br>
+											<code>array([[2, 3],</code><br>
+											&nbsp&nbsp&nbsp&nbsp<code>[5, 6]])</code><br>
+											-
 
 										</li>
 									</ul>
