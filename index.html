@@ -142,13 +142,24 @@
 										</li>
 									</ul>
 
-									<h5>Slciding and indexing:</h5>
+									<h5>Slicing and indexing:</h5>
 									<ul>
-										<li>...</li>
-										<li>...</li>
+										<li>Having following array:
+											<br>
+											<code>arr = np.arange(10)</code><br>
+											<code>array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])</code><br>
+											if we assign a scalar value to a slice:<br>
+											<code>arr[5:8] = 100</code><br>
+											<code>array([0, 1, 2, 3, 4, 100, 100, 100, 8, 9])</code><br>
+											<code>arr[5:8][1] = 999</code><br>
+											<code>array([0, 1, 2, 3, 4, 100, 999, 100, 8, 9])</code><br>
+											then we perform so-called broadcasting which means we assign a scalar value to entire range of a slice of an original array.
+											Very important thing to notice, slices are not the copies of an original array - they are like views which modifications change the source array.
+										</li>
+										<li>
+
+										</li>
 									</ul>
-
-
 							</section>
 
 						<!-- Four -->
