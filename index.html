@@ -77,6 +77,8 @@
 
 
 									<h4>Numpy</h4>
+
+									<h5>Numpy Array:</h5>
 									<ul>
 										<li>Importing numpy library:
 											<br>
@@ -84,8 +86,13 @@
 										</li>
 										<li>Creating numpy array from a list:
 											<br>
-											<code>arr = np.array([[1,2,3],[4,5,6]])</code>
-											<br>
+											<code>arr = np.array([[1,2,3],[4,5,6]])</code><br>
+											- we can check how many dimension array has:<br>
+											<code>arr.ndim</code><br>
+											<code>2</code><br>
+											- and the overall shape:<br>
+											<code>arr.shape</code><br>
+											<code>(2,6)</code><br>
 											- we get 2D array, as we put list of lists as the input.
 										</li>
 										<li>Creating 0's array:
@@ -105,7 +112,19 @@
 											<code>np.arange(10)</code><br>
 											<code>array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])</code>
 										</li>
+										<li>Converting data type:
+											<br>
+											<code>arr = np.array([1.1, -3.4, 10.1])</code><br>
+											<code>array([1.1, -3.4, 10.1])</code><br>
+											<code>arr.astype(np.int32)</code><br>
+											<code>array([1, -3, 10], dtype=int32)</code><br>
+											- when converting floats into integers we cut decimals off.
+										</li>
+									</ul>
 
+									<h5>Mathematical expression:</h5>
+									<ul>
+										<li>....</li>
 									</ul>
 
 
