@@ -239,7 +239,7 @@
 											<code>data[-cond]</code><br>
 											<code>array([4,5,6])</code><br>
 											- in this example, I reverted the condition.
-										<li>Assigning a value to data array based on the conditon in names:
+										<li>Assigning a value to data array based on the conditon in the another array:
 											<br>
 											<code>data[ names == 'Artur'] = 0</code><br>
 											<code>array([[0, 0, 0],[4, 5, 6], [0, 0, 0]])</code>
@@ -250,11 +250,11 @@
 											- we can check how many array's elements are positive:<br>
 											<code>arr = np.random.randn(100)</code><br>
 											<code>(arr > 0).sum()</code><br>
-											- having logical arrayL
-											<code>bools = np.array([True, False, True])</code>
-											- any() method checks if there are some True values:
-											<code>bools.any() -> True</code>
-											- all() method checks if all values are True:
+											- having logical array:<br>
+											<code>bools = np.array([True, False, True])</code><br>
+											- any() method checks if there are some True values:<br>
+											<code>bools.any() -> True</code><br>
+											- all() method checks if all values are True:<br>
 											<code>bools.all() -> False</code>
 										</li>
 									</ul>
