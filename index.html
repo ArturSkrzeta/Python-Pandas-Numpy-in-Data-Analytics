@@ -244,6 +244,19 @@
 											<code>data[ names == 'Artur'] = 0</code><br>
 											<code>array([[0, 0, 0],[4, 5, 6], [0, 0, 0]])</code>
 										</li>
+										<li>Methods of logical arrays:
+											<br>
+											- they trun True values into 1 and False values into 0,<br>
+											- we can check how many array's elements are positive:<br>
+											<code>arr = np.random.randn(100)</code><br>
+											<code>(arr > 0).sum()</code><br>
+											- having logical arrayL
+											<code>bools = np.array([True, False, True])</code>
+											- any() method checks if there are some True values:
+											<code>bools.any() -> True</code>
+											- all() method checks if all values are True:
+											<code>bools.all() -> False</code>
+										</li>
 									</ul>
 
 									<h5>numpy.where</h5>
@@ -265,7 +278,7 @@
 											or<br>
 											<code>np.mean(arr)</code>
 										</li>
-										<li>Mean method accepts optional argument of axis what gives an array with one dimensioon smaller:
+										<li>Mean method accepts optional argument of axis what gives an array with one dimension smaller:
 											<br>
 											<code>arr.mean(axis=0)</code><br>
 											which means we calculate an average for each rows,<br>
