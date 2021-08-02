@@ -230,7 +230,47 @@
 											<code>array([True, False, True], dtype=bool)</code><br>
 											<br>
 											<code>values[ names == 'Artur' ]</code><br>
-											<code>array([[1, 2, 3], [7, 8, 9]])</code>
+											<code>array([[1, 2, 3], [7, 8, 9]])</code><br>
+											- note that length of the array with logic values needs to be as the same as axis of indexed table.
+										</li>
+										<li>We can put that comparison in the a variable
+											<br>
+											<code>cond = names == 'Artur'</code><br>
+											<code>data[-cond]</code><br>
+											<code>array([4,5,6])</code><br>
+											- in this example, I reverted the condition.
+										<li>Assigning a value to data array based on the conditon in names:
+											<br>
+											<code>data[ names == 'Artur'] = 0</code><br>
+											<code>array([[0, 0, 0],[4, 5, 6], [0, 0, 0]])</code>
+										</li>
+									</ul>
+
+									<h5>numpy.where</h5>
+									<ul>
+										<li>Numpy.where function is a vector equivalent of 3-parameters if expression.
+											<br>
+											<code>np.where(arr > 0, 10, arr)</code><br>
+											<code>array([[-1, 10, -4],</code><br>
+											&nbsp&nbsp&nbsp&nbsp<code>[10, 10, -9]])</code><br>
+											- the condition in where says if a value within the arr is greater than 0 then replace it with 10, otherwise leave it as it is.
+										</li>
+									</ul>
+
+									<h5>Mathematical methods:</h5>
+									<ul>
+										<li>Mean can be executed on both ways:
+											<br>
+											<code>arr.mean()</code><br>
+											or<br>
+											<code>np.mean(arr)</code>
+										</li>
+										<li>Mean method accepts optional argument of axis what gives an array with one dimensioon smaller:
+											<br>
+											<code>arr.mean(axis=0)</code><br>
+											which means we calculate an average for each rows,<br>
+											<code>arr.sum(axis=1)</code><br>
+											which means we calculate a sum for each column.
 										</li>
 									</ul>
 							</section>
